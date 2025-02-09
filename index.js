@@ -5,14 +5,14 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-    if(userPreference == 'Sugar-free') {
+    if(userPreference === 'Sugar-free') {
         alert.message('Sugar-free');
     }else if (userPreference == 'Regular') {
         alert.message('Regular');
     }else if (userPreference === undefined) {
         alert.message('undefined');
     }
-console.log(`userPreference`);
+console.log(`Sugar-free`);
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
@@ -24,7 +24,7 @@ let cansLeft = 3; // Any number of cans
     }else if (cansLeft >= 5) {
         alert.message('We\'re stocked!');
     }
-console.log(``);
+console.log(`3`);
 
 
 // #### Challenge 3: Workout Intensity
@@ -64,9 +64,14 @@ let currentHour = 22;
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
-
-
-
+function message() {
+    if(currentHour >= 7 && currentHour <= 24) {
+        alert.message('Unleash the beast!');
+    }else if (currentHour < 7) {
+        alert.message('Better stick to water.');
+    }
+}
+console.log(`22`);
 
 
 
